@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="./images/New-R-2-icon-browser-tab.png">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="title">
+            <h1>JOGO DA VELHA</h1>
+        </div>
+
+
+        <div class="stage">
+            <div>
+                <div id="0" class="square"></div>
+                <div id="1" class="square"></div>
+                <div id="2" class="square"></div>
+            </div>
+            <div>
+                <div id="3" class="square"></div>
+                <div id="4" class="square"></div>
+                <div id="5" class="square"></div>
+            </div>
+            <div>
+                <div id="6" class="square"></div>
+                <div id="7" class="square"></div>
+                <div id="8" class="square"></div>
+            </div>
+        </div>
+
+
+        <div class="container_score">
+            <div class="players">
+                <div>❌<span class="score" id="score_p1"> 0 </span></div>
+                <div>⭕<span class="score" id="score_p2"> 0 </span></div>
+                <button class="button_update" onclick="zerar()">ZERAR</button>
+            </div>
+            <button class="button_update" id="restart" onclick="restart()">RESTART</button>
+        </div>
+
+    </div>
+
+    <script src="./scrpits/game.js"></script>
+    <script src="./scrpits/interface.js"></script>
+</body>
+
+</html>
